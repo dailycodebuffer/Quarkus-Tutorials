@@ -27,7 +27,7 @@ public class ExampleResource {
     @GetMapping("/person")
     public List<Person> getPeople()
     {
-        return Person.listAll(Sort.by("fisrtName").and("lastName").ascending());
+        return Person.listAll(Sort.by("firstName").and("lastName").ascending());
     }
 
     @GetMapping("/person/{id}")
